@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: rgb(0, 121, 143);
+    margin: 0;
+    width: 100%;
+    padding: 15px 15px;
+    /* opacity: 50%; */
+    }  
+.container{
+    width: 100%;        
+    }
+#logo{
+    display: inline-block;
+    width: 30%;
+    opacity: 0.75;
+    border: 1px solid rgb(0, 121, 143);
+    text-align: center;
+    vertical-align: middle;
+    }
+#name{
+    text-align: left;
+    display: inline-block;
+    width: 35%;
+    border: 1px solid rgb(0, 121, 143) /* rgb(0, 121, 143)*/;
+    vertical-align: middle;
+    /* height: 90px; */
+    /* font-family: 'Shadows Into Light Two', cursive; */
+    font-family: 'Original Surfer', cursive;
+    font-size: 35px;   
+    }
+#mail{
+    display: inline-block;
+    border: 1px solid rgb(0, 121, 143);
+    width: 12%;
+    text-align: right;
+    vertical-align: bottom;
+    font-family: 'Original Surfer', cursive;
+    font-size: 13px;
+    }
+#call{
+    display: inline-block;
+    border: 1px solid rgb(0, 121, 143);
+    width: 16%;
+    text-align: left;
+    height: 50px;
+    vertical-align: bottom;
+    font-family: 'Original Surfer', cursive;
+    font-size: 13px;
+    }
+header a{
+    border: 3px solid rgb(0, 121, 143);
+    text-decoration: black;
+    border-radius: 35px;
+    margin: 5px;
+        /* height: 40px; */
+    }
+a[href^="mailto"]{
+    padding: 13px 3px;
+    color: black;
+    border-color: black;
+    }
+a[href^="mailto"]:hover{
+    background: rgb(0, 82, 109);
+        
+    }
+a[href^="tel"]{
+    padding: 13px 3px;
+    color: black;
+    border-color: black;
+    }
+a[href^="tel"]:hover{
+    background: rgb(0, 82, 109);
+    }
+    @media (max-width:1060px){
+        .container{width: 800px;}
+        #logo{
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+        }
+        #name{
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+        }
+        #mail{
+            width:100%;
+            text-align: center;
+            display: block;
+        }
+        #call{
+            width:100%;
+            text-align: center;
+            display: inline-block;
+        }
+        header a{
+            display: inline-block;
+            width:20%;
+        }
+    }
+
+
+    @media (max-width:540px){
+        .container{
+                   width: 100%;
+        }
+        #logo{
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+        }
+        #name{
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+        }
+        #mail{
+            width:100%;
+            text-align: center;
+            display: block;
+        }
+        #call{
+            width:100%;
+            text-align: center;
+            display: block;
+        }
+        header a{
+            display: inline-block;
+            width:50%;
+        }
+    }
+    
