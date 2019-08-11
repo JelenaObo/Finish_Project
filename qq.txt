@@ -1,0 +1,74 @@
+ bool[] krustojumi = new bool[] { true, false, true, false, true,  true, true, true, true, false };
+            int n = 0;
+            for (int i = 0; i < krustojumi.Length; i++)
+            {
+                //Console.WriteLine(krustojumi[i]);
+                if (!krustojumi[i]) //if (krustojumi[i]==false)
+
+                {
+                    Console.WriteLine($"{i + 1}. krustojumam nevar tikt cauri");
+                }
+                else
+                {
+                    n = n + 1;
+                }
+            }
+            //Console.WriteLine($"tikai {n} krustojumi ir brivi");
+
+            if (n==krustojumi.Length)
+            {
+                Console.WriteLine("Var izbraukt cauri visiem krustojumiem. Cels ir brivs");
+            }
+
+            var pos = Array.IndexOf(krustojumi, false);
+            if (pos != -1)
+            {
+                Console.WriteLine($"{pos+1} is closed");
+            }
+            {
+                
+            }
+
+string[] names = new string[] {"abols", "bumba", "menesis", "jaka", "zales", "autobuss" };
+            int LetterNr=0;
+            for (int i = 0; i < names.Length; i++)
+            {
+                for (int j = 0; j < names[i].Length; j++)
+                {
+                    Console.WriteLine($"{i+1} - {names[i]} - {names[i].Substring(j,1)}");
+                }
+
+                LetterNr = LetterNr+names[i].Length;
+                Console.WriteLine(LetterNr);
+            }
+            Console.WriteLine(LetterNr);
+            string[] Letters = new string[LetterNr];
+------------------------------------------------------------
+static void PrintName(string name)
+        {
+            Console.WriteLine($"Your name is {name}");
+        }
+
+static string PrintFullName(string name, string surname)
+        {
+            return $"{name} {surname}";
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
